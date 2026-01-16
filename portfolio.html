@@ -1,144 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - AI Projects</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --main-color: #0ef; /* Bright accent color */
-            --bg-color: #000; /* Black background */
-            --text-color: #fff; /* White text color */
-            --border-color: #333; /* Dark border for contrast */
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            background: var(--bg-color);
-            color: var(--text-color);
-        }
-
-        /* Portfolio Section */
-        .portfolio {
-            min-height: 100vh;
-            padding: 50px 10%;
-            background: var(--bg-color);
-            color: var(--text-color);
-        }
-
-        .portfolio h2 {
-            font-size: 45px;
-            margin-bottom: 30px;
-            text-align: center;
-            color: var(--main-color);
-        }
-
-        .portfolio-content {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .project-card {
-            background: #1a1a1a;
-            border-radius: 10px;
-            padding: 30px;
-            margin-bottom: 30px;
-            width: 30%;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            transition: 0.3s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
-        }
-
-        .project-card img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-
-        .project-card h3 {
-            font-size: 24px;
-            margin-bottom: 15px;
-        }
-
-        .project-card p {
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        .project-card a {
-            text-decoration: none;
-            font-weight: 600;
-            color: var(--main-color);
-            border: 2px solid var(--main-color);
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-
-        .project-card a:hover {
-            background: var(--main-color);
-            color: var(--bg-color);
-        }
-
-        @media (max-width: 768px) {
-            .portfolio-content {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .project-card {
-                width: 80%;
-                margin: 15px 0;
-            }
-        }
-    </style>
+    <title>Portfolio | Jasneet Singh</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
+    <header class="header">
+        <a href="index.html" class="logo">Jasneet.</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-<!-- Portfolio Section -->
-<section class="portfolio" id="portfolio">
-    <h2>My AI Projects</h2>
-    <div class="portfolio-content">
-        <!-- Project 1 -->
-        <div class="project-card">
-            <img src="#ai-project1.jpg" alt="AI Project 1">
-            <h3>AI Chatbot Development</h3>
-            <p>Developed an AI-powered chatbot capable of handling customer queries and support with machine learning integration for natural language processing.</p>
-            <a href="https://github.com/yourusername/ai-chatbot" target="_blank">View Project</a>
+    <section class="portfolio" id="portfolio">
+        <h2 class="section-title">Latest <span>Projects</span></h2>
+
+        <div class="card-grid">
+            <!-- AgriSmart Project -->
+            <div class="card portfolio-card" style="cursor: pointer;" data-title="Disease Detection System"
+                data-subtitle="PES UNIVERSITY, Bengaluru" data-student="Jasneet Singh (PES1PG24CA068)"
+                data-image="agrismart.png"
+                data-desc="This Capstone Project (Phase-1) developed at PES University focuses on early diagnosis of plant diseases using advanced Artificial Intelligence. By employing Convolutional Neural Networks (CNN), the system automates the labor-intensive process of manual leaf inspection, significantly reducing decision-making time for farmers in remote areas. The solution generalizes across multiple crop species to prevent disease progression and improve overall agricultural productivity."
+                data-features='["CNN Architecture", "Digital Image Processing", "Kaggle PlantVillage Dataset", "Real-time AI Diagnosis"]'>
+                <div class="portfolio-img">
+                    <img src="agrismart.png" alt="AgriSmart Dashboard">
+                </div>
+                <div class="portfolio-info">
+                    <h3>AgriSmart</h3>
+                    <p>AI-powered disease detection system developed at PES University.</p>
+                    <span class="btn btn-outline"
+                        style="padding: 8px 15px; font-size: 14px; margin-top: 15px; display: inline-flex;">Read
+                        More</span>
+                </div>
+            </div>
+
+            <!-- Gurudwara Project -->
+            <div class="card portfolio-card" style="cursor: pointer;" data-title="Gurudwara Guru Arjan dev Ji"
+                data-image="gurudwara.png"
+                data-desc="Developed a full-stack dynamic MERN website to enhance community engagement. Integrated event scheduling, live kirtan streaming, a donation portal, and real-time announcements with a strong focus on responsiveness, performance, and security."
+                data-features='["MERN Stack", "Live Streaming", "Donation Portal", "Real-time Updates"]'>
+                <div class="portfolio-img">
+                    <img src="gurudwara.png" alt="Gurudwara Management System">
+                </div>
+                <div class="portfolio-info">
+                    <h3>Gurudwara Guru Arjan dev Ji</h3>
+                    <p>Full-stack dynamic website for community engagement and live streaming.</p>
+                    <span class="btn btn-outline"
+                        style="padding: 8px 15px; font-size: 14px; margin-top: 15px; display: inline-flex;">Read
+                        More</span>
+                </div>
+            </div>
+
+            <!-- Constructors Project -->
+            <div class="card portfolio-card" style="cursor: pointer;" data-title="Constructors"
+                data-image="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80"
+                data-desc="Built a modern, responsive website highlighting construction services and client testimonials. Used React, Node.js, and MongoDB for the backend, ensuring reliability and performance through optimized CI/CD pipelines."
+                data-features='["React & Node.js", "CI/CD Pipelines", "Responsive Design", "Client Portals"]'>
+                <div class="portfolio-img">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80"
+                        alt="Constructors Project">
+                </div>
+                <div class="portfolio-info">
+                    <h3>Constructors</h3>
+                    <p>Modern MERN stack portal showcasing construction services and testimonials.</p>
+                    <span class="btn btn-outline"
+                        style="padding: 8px 15px; font-size: 14px; margin-top: 15px; display: inline-flex;">Read
+                        More</span>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <!-- Project 2 -->
-        <div class="project-card">
-            <img src="#ai-project2.jpg" alt="AI Project 2">
-            <h3>AI Image Recognition</h3>
-            <p>Created an image recognition system using deep learning algorithms and TensorFlow for identifying and classifying objects in images.</p>
-            <a href="https://github.com/yourusername/ai-image-recognition" target="_blank">View Project</a>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card">
-            <img src="#ai-project3.jpg" alt="AI Project 3">
-            <h3>AI Recommendation System</h3>
-            <p>Built a recommendation engine based on user preferences and collaborative filtering using machine learning algorithms for personalized suggestions.</p>
-            <a href="https://github.com/yourusername/ai-recommendation-system" target="_blank">View Project</a>
+    <!-- Modal Overlay -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-content">
+            <span class="modal-close" id="closeModal">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be injected here -->
+            </div>
         </div>
     </div>
-</section>
 
+    <script>
+        const modal = document.getElementById('projectModal');
+        const modalBody = document.getElementById('modalBody');
+        const closeModal = document.getElementById('closeModal');
+
+        document.querySelectorAll('.portfolio-card').forEach(card => {
+            card.onclick = () => {
+                const title = card.getAttribute('data-title');
+                const subtitle = card.getAttribute('data-subtitle') || '';
+                const student = card.getAttribute('data-student') || '';
+                const image = card.getAttribute('data-image');
+                const desc = card.getAttribute('data-desc');
+                const features = JSON.parse(card.getAttribute('data-features'));
+
+                let featuresHTML = features.map(f => `
+                    <div class="feature-item">
+                        <i class='bx bx-check-circle'></i>
+                        <p>${f}</p>
+                    </div>
+                `).join('');
+
+                modalBody.innerHTML = `
+                    <img src="${image}" alt="${title}">
+                    <h2>${title}</h2>
+                    ${subtitle ? `<h4 style="color: var(--primary); margin-bottom: 5px;">${subtitle}</h4>` : ''}
+                    ${student ? `<p style="color: var(--text-dim); font-size: 14px; margin-bottom: 20px;">By: ${student}</p>` : ''}
+                    <p>${desc}</p>
+                    <div class="modal-features">
+                        ${featuresHTML}
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" class="btn btn-primary">Live Demo</a>
+                        <a href="#" class="btn btn-outline">View Code</a>
+                    </div>
+                `;
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden'; // Disable scroll
+            }
+        });
+
+        const closeFunc = () => {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Enable scroll
+        };
+
+        closeModal.onclick = closeFunc;
+        window.onclick = (e) => { if (e.target == modal) closeFunc(); };
+
+        // Navigation Highlight
+        document.querySelectorAll('.navbar a').forEach(link => {
+            if (window.location.pathname.includes(link.getAttribute('href'))) {
+                document.querySelector('.navbar a.active')?.classList.remove('active');
+                link.classList.add('active');
+            }
+        });
+    </script>
 </body>
+
 </html>

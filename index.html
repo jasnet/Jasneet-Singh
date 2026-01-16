@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasneet Singh | Digital Experience Designer</title>
+    <meta name="description"
+        content="Portfolio of Jasneet Singh, a passionate Frontend Developer specializing in creating visually stunning and user-friendly web experiences.">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Jasneet.</a>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>Jasneet Singh</span></h1>
+            <h3>Full Stack Developer</h3>
+            <p>Computer Science postgraduate with hands-on experience in building, testing, and configuring
+                high-performance applications. Specialized in MERN stack, API integration, and AI-native development.
+            </p>
+            <div class="btn-group">
+                <a href="contact.html" class="btn btn-primary">Hire Me <i class='bx bx-send'></i></a>
+                <a href="Resume cvv.pdf" download class="btn btn-outline">My Resume <i class='bx bx-download'></i></a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="FullSizeRender-Photoroom.png" alt="Jasneet Singh">
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/jasneet-singh-24331b202/" target="_blank"><i
+                    class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/jasnet" target="_blank"><i class='bx bxl-github'></i></a>
+            <!-- <a href="#"><i class='bx bxl-instagram'></i></a> -->
+            <a href="https://x.com/JASNEETSINGH05"><i class='bx bxl-twitter'></i></a>
+        </div>
+    </section>
+
+    <!-- Simple JS for Scroll Reveal -->
+    <script>
+        document.querySelectorAll('.navbar a').forEach(link => {
+            if (link.href === window.location.href) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Jasneet Singh</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Jasneet.</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Let's discuss your project</h2>
+                <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your
+                    visions.</p>
+
+                <div class="contact-item">
+                    <i class='bx bxs-envelope'></i>
+                    <div>
+                        <h4>Email Me</h4>
+                        <p>jassusinghn@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class='bx bxs-phone'></i>
+                    <div>
+                        <h4>Call Me</h4>
+                        <p>+91 7089160973</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class='bx bxs-map'></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Bangalore, India</p>
+                    </div>
+                </div>
+
+                <div class="social-links" style="position: static; margin-top: 30px; width: 100%;">
+                    <a href="https://www.linkedin.com/in/jasneet-singh-24331b202/" target="_blank"><i
+                            class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/jasnet" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://x.com/JASNEETSINGH05" target="_blank"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+
+            <form action="#">
+                <div class="input-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <div class="input-group">
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Message
+                    <i class='bx bx-paper-plane'></i></button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('.navbar a').forEach(link => {
+            if (window.location.pathname.includes(link.getAttribute('href'))) {
+                document.querySelector('.navbar a.active')?.classList.remove('active');
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+
+</html>

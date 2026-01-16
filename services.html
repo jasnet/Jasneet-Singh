@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Jasneet Singh</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Jasneet.</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="services" id="services">
+        <h2 class="section-title">My <span>Services</span></h2>
+
+        <div class="card-grid">
+            <div class="card">
+                <i class='bx bx-code-block'></i>
+                <h3>Full Stack Development</h3>
+                <p>Creating high-performance web applications using the MERN stack (MongoDB, Express, React, Node.js).
+                </p>
+            </div>
+            <div class="card">
+                <i class='bx bx-server'></i>
+                <h3>API Integration</h3>
+                <p>Designing and implementing robust RESTful APIs and secondary backend services for seamless data flow.
+                </p>
+            </div>
+            <div class="card">
+                <i class='bx bx-brain'></i>
+                <h3>AI-Native Dev</h3>
+                <p>Integrating AI and Machine Learning models (like your Disease Detection system) into modern web
+                    interfaces.</p>
+            </div>
+            <div class="card">
+                <i class='bx bx-search-alt'></i>
+                <h3>SEO & Performance</h3>
+                <p>Optimizing web application speed and search engine visibility for maximum organic reach.</p>
+            </div>
+            <div class="card">
+                <i class='bx bxs-check-shield'></i>
+                <h3>Unit Testing</h3>
+                <p>Conducting rigorous unit testing and code reviews to ensure 90%+ bug-free production environments.
+                </p>
+            </div>
+            <div class="card">
+                <i class='bx bx-git-branch'></i>
+                <h3>CI/CD & DevOps</h3>
+                <p>Deploying projects using automated pipelines, Git/TFS, and modern hosting platforms like Vercel.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('.navbar a').forEach(link => {
+            if (window.location.pathname.includes(link.getAttribute('href'))) {
+                document.querySelector('.navbar a.active')?.classList.remove('active');
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+
+</html>
